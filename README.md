@@ -9,7 +9,7 @@
 
 ## Demo Video
 
-🎥 Video link: coming (will be added here)
+**Youtube Video** https://youtu.be/GggBTchIDMg 
 
 ---
 
@@ -54,3 +54,4 @@ Each service has its own repository, its own dependencies (`package-lock.json` o
 - **My public IP changes.** My IP at school is different from my IP at home, so the "my IP only" NSG rules stopped working when I moved. I had to update the rule source.
 - **Services stop when SSH disconnects.** My SSH connection dropped several times, and the service stopped with it. I used `nohup ... &` to run the services in the background.
 - **Least privilege.** Port 5672 accepts traffic only from the order-vm IP, and the `orderapp` RabbitMQ user has no administrator tag.
+- **No capacity in Sweden Central.** When I restarted my VMs, Azure could not start rabbitmq-vm and product-vm (AllocationFailed). I resized them from B2als_v2 to B2ls_v2 to start them.
